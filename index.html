@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Star Tx Services | 24/7 Water Damage Restoration & Plumbing in Austin, TX</title>
+<meta name="description" content="Fast, reliable water damage restoration, cleanup, and plumbing services in Austin, TX. Licensed, insured, 30-min response. Call (512) 960-7001 for a free estimate!">
+<meta name="theme-color" content="#1B67B2">
+<meta property="og:title" content="All Star Tx Services | 24/7 Water Damage Restoration & Plumbing in Austin, TX">
+<meta property="og:description" content="Fast, reliable water damage restoration, cleanup, and plumbing services in Austin, TX. Licensed, insured, 30-min response.">
+<meta property="og:type" content="website">
+<style>
+/* ============================================================
+   Design tokens
+   ============================================================ */
+:root {
+  --primary: #1B67B2;
+  --primary-dark: #134E8A;
+  --primary-light: #3B82D6;
+  --secondary: #162D52;
+  --accent: #E62329;
+  --accent-dark: #B91D22;
+  --bg: #FBFBFB;
+  --bg-alt: #F4F6F8;
+  --surface: #FFFFFF;
+  --text: #0F1B2E;
+  --text-muted: #5C6677;
+  --border: #E1E6EE;
+  --star: #F5A623;
+  --shadow-sm: 0 1px 3px rgba(22, 45, 82, .06), 0 1px 2px rgba(22, 45, 82, .04);
+  --shadow-md: 0 6px 20px rgba(22, 45, 82, .08), 0 2px 6px rgba(22, 45, 82, .04);
+  --shadow-lg: 0 18px 50px rgba(22, 45, 82, .14);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --maxw: 1200px;
+  --font: 'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ============================================================
+   Reset / base
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4 { margin: 0 0 .5em; line-height: 1.2; font-weight: 700; color: var(--secondary); }
+h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); letter-spacing: -.01em; }
+h2 { font-size: clamp(1.7rem, 3.2vw, 2.5rem); letter-spacing: -.01em; }
+h3 { font-size: 1.25rem; }
+p { margin: 0 0 1rem; }
+a { color: var(--primary); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--accent); }
+img { max-width: 100%; display: block; }
+ul { margin: 0; padding: 0; list-style: none; }
+button { font-family: inherit; cursor: pointer; }
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section { padding: 88px 0; }
+.section--alt { background: var(--bg-alt); }
+.section--dark { background: var(--secondary); color: #fff; }
+.section--dark h2, .section--dark h3 { color: #fff; }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: var(--accent);
+}
+.section--dark .eyebrow { color: #8FC0FF; }
+.section-head { max-width: 760px; margin-bottom: 48px; }
+.section-head p { color: var(--text-muted); font-size: 1.05rem; }
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: transform .15s, box-shadow .2s, background .2s, color .2s;
+  text-align: center;
+  line-height: 1.2;
+}
+.btn:active { transform: translateY(1px); }
+.btn--primary { background: var(--accent); color: #fff; box-shadow: 0 8px 20px rgba(230, 35, 41, .28); }
+.btn--primary:hover { background: var(--accent-dark); color: #fff; }
+.btn--secondary { background: var(--primary); color: #fff; }
+.btn--secondary:hover { background: var(--primary-dark); color: #fff; }
+.btn--ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.45); }
+.btn--ghost:hover { background: rgba(255,255,255,.1); color: #fff; }
+.btn--lg { padding: 16px 32px; font-size: 1.05rem; }
+.btn--block { width: 100%; }
+
+/* ============================================================
+   Top bar
+   ============================================================ */
+.topbar {
+  background: var(--secondary);
+  color: #DCE7F6;
+  font-size: .85rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.topbar .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; align-items: center; }
+.topbar a { color: #DCE7F6; }
+.topbar a:hover { color: #fff; }
+.topbar__left { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+.topbar__item { display: inline-flex; align-items: center; gap: 6px; }
+.topbar__right { display: flex; gap: 14px; align-items: center; }
+.topbar__badge {
+  background: rgba(143, 192, 255, .15);
+  color: #8FC0FF;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: .75rem;
+  letter-spacing: .04em;
+}
+@media (max-width: 640px) { .topbar__right { display: none; } }
+
+/* ============================================================
+   Header / nav
+   ============================================================ */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand__mark {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  display: grid; place-items: center;
+  color: #fff; font-weight: 800; font-size: 1.15rem;
+  box-shadow: var(--shadow-sm);
+}
+.brand__name { line-height: 1.1; }
+.brand__name b { display: block; font-size: 1.05rem; color: var(--secondary); }
+.brand__name span { font-size: .75rem; color: var(--text-muted); letter-spacing: .08em; text-transform: uppercase; }
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav__links { display: flex; gap: 26px; }
+.nav__links a { color: var(--text); font-weight: 600; font-size: .96rem; }
+.nav__links a:hover { color: var(--primary); }
+.nav__cta { display: flex; align-items: center; gap: 12px; }
+.nav__phone {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 700; color: var(--secondary);
+}
+.nav__phone svg { color: var(--accent); }
+.nav__toggle {
+  display: none;
+  background: none; border: 0;
+  width: 44px; height: 44px;
+  padding: 0; align-items: center; justify-content: center;
+}
+.nav__toggle span {
+  width: 22px; height: 2px; background: var(--secondary);
+  position: relative; display: block;
+  transition: transform .25s, opacity .2s;
+}
+.nav__toggle span::before, .nav__toggle span::after {
+  content: ""; position: absolute; left: 0;
+  width: 22px; height: 2px; background: var(--secondary);
+  transition: transform .25s;
+}
+.nav__toggle span::before { top: -7px; }
+.nav__toggle span::after { top: 7px; }
+.nav__toggle.is-open span { background: transparent; }
+.nav__toggle.is-open span::before { transform: translateY(7px) rotate(45deg); }
+.nav__toggle.is-open span::after { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 980px) {
+  .nav__toggle { display: inline-flex; }
+  .nav__links {
+    position: absolute; top: 76px; left: 0; right: 0;
+    flex-direction: column; gap: 0;
+    background: #fff; border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    padding: 12px 24px;
+    transform: translateY(-8px); opacity: 0; pointer-events: none;
+    transition: transform .2s, opacity .2s;
+  }
+  .nav__links.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav__links a { padding: 12px 0; border-bottom: 1px solid var(--border); width: 100%; }
+  .nav__links a:last-child { border-bottom: 0; }
+  .nav__cta .btn--ghost { display: none; }
+}
+@media (max-width: 560px) {
+  .nav__phone span { display: none; }
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+  position: relative;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(59, 130, 214, .25) 0%, transparent 55%),
+    radial-gradient(circle at 10% 90%, rgba(230, 35, 41, .12) 0%, transparent 50%),
+    linear-gradient(180deg, #F4F8FD 0%, #EAF1FA 100%);
+  overflow: hidden;
+  padding: 70px 0 90px;
+}
+.hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(22, 45, 82, .03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(22, 45, 82, .03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 75%);
+  pointer-events: none;
+}
+.hero__grid {
+  display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px;
+  align-items: center; position: relative;
+}
+.hero__pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #fff; border: 1px solid var(--border);
+  padding: 8px 16px; border-radius: 999px;
+  font-size: .82rem; font-weight: 600; color: var(--secondary);
+  box-shadow: var(--shadow-sm); margin-bottom: 22px;
+}
+.hero__pill .dot { width: 8px; height: 8px; border-radius: 50%; background: #1FB55E; box-shadow: 0 0 0 4px rgba(31, 181, 94, .2); }
+.hero h1 { color: var(--secondary); }
+.hero h1 .hl { color: var(--primary); position: relative; }
+.hero h1 .hl::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 8px;
+  background: rgba(230, 35, 41, .18); z-index: -1; border-radius: 4px;
+}
+.hero__lead { font-size: 1.12rem; color: var(--text-muted); margin: 18px 0 28px; max-width: 560px; }
+.hero__features { display: flex; flex-wrap: wrap; gap: 14px 24px; margin-bottom: 30px; }
+.hero__feature { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--secondary); font-size: .95rem; }
+.hero__feature svg { color: var(--primary); flex-shrink: 0; }
+.hero__ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero__stat-row {
+  display: flex; gap: 36px; margin-top: 38px;
+  padding-top: 28px; border-top: 1px solid rgba(22, 45, 82, .12);
+  flex-wrap: wrap;
+}
+.hero__stat b { display: block; font-size: 1.7rem; color: var(--primary); font-weight: 800; line-height: 1; }
+.hero__stat span { font-size: .82rem; color: var(--text-muted); }
+
+/* Hero form card */
+.hero__form-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+  position: relative;
+}
+.hero__form-card::before {
+  content: ""; position: absolute; top: -10px; left: 32px; right: 32px; height: 4px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--primary) 100%);
+  border-radius: 4px;
+}
+.hero__form-card h3 { font-size: 1.4rem; margin-bottom: 4px; }
+.hero__form-card p.sub { font-size: .92rem; color: var(--text-muted); margin-bottom: 20px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-field { margin-bottom: 12px; }
+.form-field label { display: block; font-size: .82rem; font-weight: 600; color: var(--secondary); margin-bottom: 6px; }
+.form-field input, .form-field select, .form-field textarea {
+  width: 100%; padding: 12px 14px;
+  border: 1.5px solid var(--border); border-radius: 10px;
+  font-family: inherit; font-size: .95rem; color: var(--text);
+  background: #FAFBFD; transition: border-color .2s, box-shadow .2s, background .2s;
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+  outline: none; border-color: var(--primary); background: #fff;
+  box-shadow: 0 0 0 4px rgba(27, 103, 178, .12);
+}
+.form-field textarea { resize: vertical; min-height: 84px; }
+.form-disclaimer { font-size: .76rem; color: var(--text-muted); text-align: center; margin-top: 10px; }
+.form-success {
+  display: none;
+  background: #EAF8F0; border: 1px solid #BDE7CF;
+  color: #14603A; padding: 14px 16px; border-radius: 10px;
+  font-weight: 600; font-size: .92rem; text-align: center; margin-bottom: 14px;
+}
+.form-success.is-visible { display: block; }
+
+@media (max-width: 980px) {
+  .hero__grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero { padding: 50px 0 70px; }
+}
+
+/* ============================================================
+   Trust strip
+   ============================================================ */
+.trust {
+  background: var(--secondary);
+  color: #fff;
+  padding: 26px 0;
+}
+.trust__grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+}
+.trust__item { display: flex; align-items: center; gap: 14px; justify-content: center; }
+.trust__item svg { color: #8FC0FF; flex-shrink: 0; }
+.trust__item b { display: block; font-size: 1.05rem; }
+.trust__item span { font-size: .82rem; color: #B7C8E0; }
+.trust__item + .trust__item { border-left: 1px solid rgba(255,255,255,.1); }
+@media (max-width: 760px) {
+  .trust__grid { grid-template-columns: 1fr 1fr; gap: 18px 14px; }
+  .trust__item + .trust__item { border-left: 0; }
+  .trust__item { justify-content: flex-start; }
+}
+
+/* ============================================================
+   Services
+   ============================================================ */
+.services__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+}
+.service-card {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 28px 24px; transition: transform .2s, box-shadow .2s, border-color .2s;
+  position: relative; overflow: hidden;
+}
+.service-card::before {
+  content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0); transform-origin: left; transition: transform .25s;
+}
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: rgba(27, 103, 178, .3); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-card__icon {
+  width: 52px; height: 52px; border-radius: 12px;
+  background: linear-gradient(135deg, rgba(27,103,178,.12), rgba(27,103,178,.04));
+  display: grid; place-items: center; color: var(--primary); margin-bottom: 18px;
+}
+.service-card h3 { color: var(--secondary); margin-bottom: 8px; font-size: 1.15rem; }
+.service-card p { color: var(--text-muted); font-size: .94rem; margin: 0 0 16px; }
+.service-card ul {
+  margin-bottom: 18px; display: grid; gap: 6px;
+}
+.service-card ul li {
+  font-size: .88rem; color: var(--text);
+  padding-left: 22px; position: relative;
+}
+.service-card ul li::before {
+  content: ""; position: absolute; left: 0; top: 7px;
+  width: 14px; height: 14px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B67B2' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>") no-repeat center / contain;
+}
+.service-card__link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-weight: 700; color: var(--primary); font-size: .9rem;
+}
+.service-card__link:hover { color: var(--accent); gap: 10px; }
+.service-card__link::after { content: "\2192"; transition: gap .2s; }
+
+@media (max-width: 920px) { .services__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .services__grid { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   Why us
+   ============================================================ */
+.why__grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+}
+.why__media {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  min-height: 420px; padding: 36px; color: #fff;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.why__media::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(255,255,255,.18) 0%, transparent 60%),
+              radial-gradient(circle at 20% 90%, rgba(230,35,41,.25) 0%, transparent 60%);
+}
+.why__quote {
+  position: relative; z-index: 1;
+  font-size: 1.5rem; font-weight: 700; line-height: 1.35;
+}
+.why__quote::before {
+  content: "\201C"; font-size: 4rem; line-height: 1; color: rgba(255,255,255,.25);
+  display: block; margin-bottom: -10px;
+}
+.why__author {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; gap: 14px;
+}
+.why__avatar {
+  width: 50px; height: 50px; border-radius: 50%;
+  background: linear-gradient(135deg, #F5A623, var(--accent));
+  display: grid; place-items: center; font-weight: 800; color: #fff;
+}
+.why__author b { display: block; }
+.why__author span { font-size: .82rem; color: #B7C8E0; }
+
+.why__features { display: grid; gap: 18px; margin-top: 8px; }
+.why__feature {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px; background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-md); transition: transform .2s, box-shadow .2s;
+}
+.why__feature:hover { transform: translateX(4px); box-shadow: var(--shadow-sm); }
+.why__feature__icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: rgba(27, 103, 178, .1); color: var(--primary);
+  display: grid; place-items: center; flex-shrink: 0;
+}
+.why__feature h4 { margin: 0 0 4px; font-size: 1.05rem; color: var(--secondary); }
+.why__feature p { margin: 0; font-size: .9rem; color: var(--text-muted); }
+
+@media (max-width: 920px) {
+  .why__grid { grid-template-columns: 1fr; gap: 36px; }
+  .why__media { min-height: 320px; }
+}
+
+/* ============================================================
+   Reviews
+   ============================================================ */
+.reviews__head {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  flex-wrap: wrap; gap: 20px; margin-bottom: 40px;
+}
+.reviews__rating { display: flex; align-items: center; gap: 14px; }
+.reviews__stars { color: var(--star); font-size: 1.3rem; letter-spacing: 2px; }
+.reviews__rating b { font-size: 2rem; color: var(--secondary); line-height: 1; }
+.reviews__rating span { display: block; font-size: .85rem; color: var(--text-muted); }
+
+.reviews__grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+}
+.review {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 26px; display: flex; flex-direction: column; gap: 14px;
+  transition: transform .2s, box-shadow .2s;
+}
+.review:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.review__stars { color: var(--star); letter-spacing: 2px; }
+.review__text { font-size: .97rem; color: var(--text); line-height: 1.55; }
+.review__author { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border); }
+.review__avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff; display: grid; place-items: center; font-weight: 700; font-size: .9rem;
+}
+.review__author b { display: block; font-size: .95rem; color: var(--secondary); }
+.review__author span { font-size: .8rem; color: var(--text-muted); }
+.review__source {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .78rem; color: var(--text-muted); font-weight: 600;
+}
+@media (max-width: 920px) { .reviews__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .reviews__grid { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq__list { max-width: 860px; margin: 0 auto; }
+.faq__item {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md);
+  margin-bottom: 14px; overflow: hidden; transition: box-shadow .2s, border-color .2s;
+}
+.faq__item.is-open { box-shadow: var(--shadow-md); border-color: rgba(27, 103, 178, .35); }
+.faq__q {
+  width: 100%; text-align: left; padding: 20px 22px;
+  background: none; border: 0; display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; font-weight: 700; font-size: 1.02rem; color: var(--secondary);
+}
+.faq__q:hover { color: var(--primary); }
+.faq__q .chev {
+  width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%;
+  background: rgba(27, 103, 178, .1); color: var(--primary);
+  display: grid; place-items: center; transition: transform .25s, background .2s;
+}
+.faq__item.is-open .faq__q .chev { transform: rotate(45deg); background: var(--accent); color: #fff; }
+.faq__a {
+  max-height: 0; overflow: hidden; transition: max-height .3s ease;
+  padding: 0 22px;
+}
+.faq__a-inner { padding-bottom: 22px; color: var(--text-muted); font-size: .97rem; line-height: 1.6; }
+.faq__item.is-open .faq__a { max-height: 400px; }
+
+/* ============================================================
+   Final CTA
+   ============================================================ */
+.cta {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  color: #fff;
+}
+.cta::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(255,255,255,.12) 0%, transparent 50%),
+    radial-gradient(circle at 15% 85%, rgba(230,35,41,.25) 0%, transparent 55%);
+}
+.cta__inner { position: relative; z-index: 1; text-align: center; max-width: 760px; margin: 0 auto; }
+.cta__inner h2 { color: #fff; }
+.cta__inner p { color: #DCE7F6; font-size: 1.1rem; margin-bottom: 30px; }
+.cta__buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.cta__phone {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: #fff; color: var(--secondary);
+  padding: 16px 28px; border-radius: 999px;
+  font-weight: 800; font-size: 1.15rem;
+  box-shadow: var(--shadow-lg);
+}
+.cta__phone:hover { transform: translateY(-2px); color: var(--secondary); }
+.cta__phone svg { color: var(--accent); }
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.footer { background: #0C1A33; color: #B7C8E0; padding: 60px 0 24px; }
+.footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.footer__brand .brand__name b { color: #fff; }
+.footer__brand p { font-size: .9rem; color: #98A9C6; margin: 16px 0 18px; max-width: 320px; }
+.footer__col h4 { color: #fff; font-size: .95rem; margin-bottom: 16px; letter-spacing: .04em; text-transform: uppercase; }
+.footer__col ul li { margin-bottom: 10px; }
+.footer__col ul li a, .footer__col ul li { font-size: .9rem; color: #B7C8E0; }
+.footer__col ul li a:hover { color: #fff; }
+.footer__contact li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: .9rem; }
+.footer__contact svg { color: #8FC0FF; margin-top: 2px; flex-shrink: 0; }
+.footer__bottom {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  padding-top: 24px; font-size: .82rem; color: #6F84A8;
+}
+.footer__social { display: flex; gap: 10px; }
+.footer__social a {
+  width: 34px; height: 34px; border-radius: 8px;
+  background: rgba(255,255,255,.06); display: grid; place-items: center;
+  color: #B7C8E0;
+}
+.footer__social a:hover { background: var(--primary); color: #fff; }
+
+@media (max-width: 880px) { .footer__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .footer__grid { grid-template-columns: 1fr; gap: 28px; } }
+
+/* ============================================================
+   Floating call button (mobile)
+   ============================================================ */
+.float-call {
+  position: fixed; right: 18px; bottom: 18px; z-index: 60;
+  background: var(--accent); color: #fff;
+  width: 58px; height: 58px; border-radius: 50%;
+  display: none; align-items: center; justify-content: center;
+  box-shadow: 0 10px 25px rgba(230, 35, 41, .45);
+  animation: pulse 2.2s infinite;
+}
+.float-call:hover { background: var(--accent-dark); color: #fff; }
+@keyframes pulse {
+  0% { box-shadow: 0 10px 25px rgba(230, 35, 41, .45), 0 0 0 0 rgba(230, 35, 41, .5); }
+  70% { box-shadow: 0 10px 25px rgba(230, 35, 41, .45), 0 0 0 16px rgba(230, 35, 41, 0); }
+  100% { box-shadow: 0 10px 25px rgba(230, 35, 41, .45), 0 0 0 0 rgba(230, 35, 41, 0); }
+}
+@media (max-width: 760px) { .float-call { display: inline-flex; } }
+
+/* ============================================================
+   Reveal-on-scroll
+   ============================================================ */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .float-call { animation: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR
+     ============================================================ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__left">
+      <span class="topbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Serving Austin, TX &amp; Surrounding Areas
+      </span>
+      <span class="topbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Open 24/7 &middot; 365 Days a Year
+      </span>
+    </div>
+    <div class="topbar__right">
+      <span class="topbar__badge">Licensed &amp; Insured</span>
+      <span class="topbar__badge">Water Damage Certified</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#top" class="brand" aria-label="All Star Tx Services home">
+      <span class="brand__mark">A&#9733;</span>
+      <span class="brand__name">
+        <b>All Star Tx Services</b>
+        <span>Water Damage &amp; Restoration</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#areas">Areas We Serve</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="tel:+15129607001" class="nav__phone" aria-label="Call (512) 960-7001">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>(512) 960-7001</span>
+        </a>
+        <a href="#contact" class="btn btn--primary">Free Estimate</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================
+     HERO + FORM
+     ============================================================ -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <span class="hero__pill">
+        <span class="dot"></span>
+        Available Now &middot; 30&ndash;180 Min Response Time
+      </span>
+      <h1>Austin&rsquo;s Trusted <span class="hl">Water Damage</span> &amp; Restoration Experts</h1>
+      <p class="hero__lead">
+        Burst pipe, flooded room, or slow leak? Our licensed, insured team
+        responds 24/7 across Austin and Central Texas &mdash; extracting water,
+        drying structures, and rebuilding your property back to pre-damage
+        condition. Free estimates, insurance help, no surprise fees.
+      </p>
+      <div class="hero__features">
+        <span class="hero__feature">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          24/7 Emergency Response
+        </span>
+        <span class="hero__feature">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Insurance Claim Assistance
+        </span>
+        <span class="hero__feature">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Family-Owned, 10+ Yrs Experience
+        </span>
+      </div>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary btn--lg">Get My Free Estimate</a>
+        <a href="tel:+15129607001" class="btn btn--secondary btn--lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (512) 960-7001
+        </a>
+      </div>
+      <div class="hero__stat-row">
+        <div class="hero__stat"><b>10+</b><span>Years Experience</span></div>
+        <div class="hero__stat"><b>24/7</b><span>Emergency Service</span></div>
+        <div class="hero__stat"><b>15+</b><span>Cities Served</span></div>
+        <div class="hero__stat"><b>4.9&#9733;</b><span>Customer Rating</span></div>
+      </div>
+    </div>
+
+    <!-- Hero contact form -->
+    <aside class="hero__form-card" id="contact">
+      <h3>Request a Free Estimate</h3>
+      <p class="sub">Tell us what&rsquo;s going on &mdash; we&rsquo;ll call you back fast, usually within 30 minutes.</p>
+      <div class="form-success" id="formSuccess">
+        Thanks! Your request was received. A specialist will reach out shortly. For emergencies, call <a href="tel:+15129607001"><strong>(512) 960-7001</strong></a>.
+      </div>
+      <form id="leadForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(512) 555-0123">
+          </div>
+          <div class="form-field">
+            <label for="zip">ZIP Code *</label>
+            <input type="text" id="zip" name="zip" required pattern="^\d{5}(-\d{4})?$" autocomplete="postal-code" placeholder="78704">
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+        </div>
+        <div class="form-field">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>&mdash; Please choose an option &mdash;</option>
+            <option value="water-damage">Water Damage Clean Up &amp; Restoration</option>
+            <option value="emergency">24/7 Emergency Water Extraction</option>
+            <option value="carpet">Carpet Cleaning</option>
+            <option value="tile">Tile &amp; Grout Cleaning</option>
+            <option value="upholstery">Upholstery Cleaning</option>
+            <option value="air-duct">Air Duct Cleaning</option>
+            <option value="dryer-vent">Dryer Vent Cleaning</option>
+            <option value="remodeling">Remodeling &amp; Reconstruction</option>
+            <option value="cleanup">Clean Up &amp; Extraction</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message">Briefly describe the issue</label>
+          <textarea id="message" name="message" placeholder="Example: Water heater burst in the garage, ~2 inches of standing water."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Send My Free Estimate Request</button>
+        <p class="form-disclaimer">By submitting, you agree to be contacted by All Star Tx Services about your request. We never share your info.</p>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST STRIP
+     ============================================================ -->
+<section class="trust">
+  <div class="container trust__grid">
+    <div class="trust__item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div><b>Licensed &amp; Insured</b><span>Water damage certified</span></div>
+    </div>
+    <div class="trust__item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <div><b>24/7 Availability</b><span>Day, night &amp; holidays</span></div>
+    </div>
+    <div class="trust__item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <div><b>Free Estimates</b><span>No obligation, no hidden fees</span></div>
+    </div>
+    <div class="trust__item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div><b>Family-Owned</b><span>Austin locals since day one</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Complete Water Damage &amp; Restoration Services</h2>
+      <p>From the first drop of water to the final coat of paint, our certified team handles every step of the recovery process &mdash; so you don&rsquo;t have to coordinate five different contractors.</p>
+    </div>
+
+    <div class="services__grid">
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+        </div>
+        <h3>Water Damage Clean Up</h3>
+        <p>Rapid-response extraction and structural drying to stop damage before it spreads.</p>
+        <ul>
+          <li>Emergency response</li>
+          <li>Water extraction</li>
+          <li>Damage mitigation</li>
+          <li>Complete reconstruction</li>
+          <li>Insurance coordination</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Get help now</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
+        <h3>Professional Cleaning</h3>
+        <p>Improve air quality, increase safety, and extend the life of every surface in your home.</p>
+        <ul>
+          <li>Improved air circulation</li>
+          <li>Increased safety</li>
+          <li>Prolonged surface durability</li>
+          <li>Deep cleaning solutions</li>
+          <li>Attention to detail</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Book a cleaning</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Carpet Cleaning</h3>
+        <p>Deep cleaning that removes dirt, stains, and allergens for a fresher, healthier home.</p>
+        <ul>
+          <li>Removes stubborn stains</li>
+          <li>Eliminates allergens</li>
+          <li>Deodorizes carpets</li>
+          <li>Prolongs carpet life</li>
+          <li>Safe for pets &amp; kids</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Refresh my carpets</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3>Tile &amp; Grout Cleaning</h3>
+        <p>Restore the shine to your tile and grout by removing grime and buildup for a like-new finish.</p>
+        <ul>
+          <li>Deep cleans grout lines</li>
+          <li>Removes tough stains</li>
+          <li>Restores tile luster</li>
+          <li>Prevents mold growth</li>
+          <li>Safe for all tile types</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Restore my tile</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 11V8M16 11V8"/></svg>
+        </div>
+        <h3>Upholstery Cleaning</h3>
+        <p>Refresh your furniture by lifting embedded dirt and stains to restore comfort and beauty.</p>
+        <ul>
+          <li>Removes embedded dirt</li>
+          <li>Lifts stubborn stains</li>
+          <li>Safe for delicate fabrics</li>
+          <li>Enhances fabric longevity</li>
+          <li>Improves indoor air quality</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Refresh my furniture</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2"/><path d="M17.73 2.27A2.5 2.5 0 1 1 19.5 6.5H2"/><path d="M9.59 19.41A2 2 0 1 0 11 16H2"/></svg>
+        </div>
+        <h3>Air Duct Cleaning</h3>
+        <p>Breathe easier with detailed air duct cleaning that cuts dust and allergens throughout your home.</p>
+        <ul>
+          <li>Reduces allergens</li>
+          <li>Improves HVAC efficiency</li>
+          <li>Removes dust buildup</li>
+          <li>Enhances air quality</li>
+          <li>Extends HVAC lifespan</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Clean my ducts</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M12 22a6 6 0 0 0 6-6c0-3-2-5-3-6a6 6 0 0 0-3-1 6 6 0 0 0-3 1c-1 1-3 3-3 6a6 6 0 0 0 6 6z"/></svg>
+        </div>
+        <h3>Dryer Vent Cleaning</h3>
+        <p>Protect your home from fire hazards and increase dryer efficiency with a thorough vent cleaning.</p>
+        <ul>
+          <li>Removes lint buildup</li>
+          <li>Prevents fire hazards</li>
+          <li>Improves dryer efficiency</li>
+          <li>Reduces drying time</li>
+          <li>Lowers energy costs</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Schedule service</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+        </div>
+        <h3>Remodeling &amp; Reconstruction</h3>
+        <p>Rebuild after damage or disasters with a licensed, experienced team that delivers fast results.</p>
+        <ul>
+          <li>Tailored solutions for homes &amp; businesses</li>
+          <li>Quality craftsmanship you can trust</li>
+          <li>Licensed and experienced team</li>
+          <li>Fast, reliable results</li>
+          <li>Project management end-to-end</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Start a project</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-card__icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        </div>
+        <h3>Clean Up &amp; Extraction</h3>
+        <p>Safe removal of debris and waste with 24/7 emergency response and expert property protection.</p>
+        <ul>
+          <li>Safe removal of debris &amp; waste</li>
+          <li>Post-construction &amp; disaster cleanup</li>
+          <li>Water damage and hazard removal</li>
+          <li>24/7 emergency response available</li>
+          <li>Fast, efficient, thorough service</li>
+        </ul>
+        <a href="#contact" class="service-card__link">Get cleanup help</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY US
+     ============================================================ -->
+<section class="section section--alt" id="why">
+  <div class="container why__grid">
+    <div class="why__media reveal">
+      <p class="why__quote">
+        We treat your property like it&rsquo;s our own. That means showing up
+        fast, communicating clearly, and not cutting corners &mdash; ever.
+      </p>
+      <div class="why__author">
+        <div class="why__avatar">JR</div>
+        <div>
+          <b>The All Star Tx Team</b>
+          <span>Austin, TX &middot; Family Owned</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="why__copy reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Dependable Water Restoration When You Need It Most</h2>
+      <p style="color: var(--text-muted); margin-bottom: 28px;">
+        We&rsquo;re a family-owned business committed to delivering high-quality
+        work, excellent communication, and unmatched response times. Backed by
+        over a decade of specialized experience, we coordinate directly with
+        contractors and insurers so you can focus on getting your life back
+        to normal.
+      </p>
+
+      <div class="why__features">
+        <div class="why__feature">
+          <div class="why__feature__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>30-Minute to 3-Hour Response</h4>
+            <p>Emergencies don&rsquo;t wait, and neither do we. Dispatch is on call 24/7, every day of the year.</p>
+          </div>
+        </div>
+        <div class="why__feature">
+          <div class="why__feature__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>Licensed, Insured &amp; Certified</h4>
+            <p>Water-damage certified technicians, full insurance, and a track record of doing the job right the first time.</p>
+          </div>
+        </div>
+        <div class="why__feature">
+          <div class="why__feature__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
+          </div>
+          <div>
+            <h4>Insurance Claim Assistance</h4>
+            <p>We document everything and work seamlessly with your insurer and adjuster to take the paperwork off your plate.</p>
+          </div>
+        </div>
+        <div class="why__feature">
+          <div class="why__feature__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <h4>True Austin Locals</h4>
+            <p>We&rsquo;re your neighbors. When you call, you&rsquo;re talking to a local team that knows Austin homes and codes inside out.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REVIEWS
+     ============================================================ -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="reviews__head reveal">
+      <div class="section-head" style="margin-bottom: 0;">
+        <span class="eyebrow">Customer Reviews</span>
+        <h2>Trusted by Austin Homeowners</h2>
+      </div>
+      <div class="reviews__rating">
+        <div>
+          <b>4.9</b>
+          <span class="reviews__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div>
+          <span style="display:block; font-weight:600; color: var(--secondary);">Based on 120+ reviews</span>
+          <span style="font-size: .82rem; color: var(--text-muted);">Across Google &amp; Facebook</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews__grid">
+      <article class="review reveal">
+        <div class="review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review__text">&ldquo;Our water heater burst at 11pm and All Star had a crew at our door in under an hour. They extracted the water, set up drying equipment, and walked us through the insurance claim the next morning. Absolute lifesavers.&rdquo;</p>
+        <div class="review__author">
+          <div class="review__avatar">SM</div>
+          <div>
+            <b>Sarah M.</b>
+            <span>Round Rock, TX</span>
+          </div>
+        </div>
+        <span class="review__source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.95c5.05-.5 9-4.76 9-9.95 0-5.52-4.48-10-10-10z"/></svg>
+          Facebook Review
+        </span>
+      </article>
+
+      <article class="review reveal">
+        <div class="review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review__text">&ldquo;Honest, fair, and genuinely helpful. After a pipe leak under the slab, two other companies tried to upsell me on stuff I didn&rsquo;t need. All Star gave me a straight answer, a fair quote, and the work was spotless. Highly recommend.&rdquo;</p>
+        <div class="review__author">
+          <div class="review__avatar">DT</div>
+          <div>
+            <b>David T.</b>
+            <span>Austin, TX</span>
+          </div>
+        </div>
+        <span class="review__source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z" fill="#34A853"/><path d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z" fill="#EA4335"/></svg>
+          Google Review
+        </span>
+      </article>
+
+      <article class="review reveal">
+        <div class="review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review__text">&ldquo;They cleaned our air ducts and dryer vent after a remodel. Crew was on time, respectful of the house, and showed me before/after photos. Dryer runs half the time it used to. Will use them again for carpet cleaning.&rdquo;</p>
+        <div class="review__author">
+          <div class="review__avatar">JL</div>
+          <div>
+            <b>Jennifer L.</b>
+            <span>Cedar Park, TX</span>
+          </div>
+        </div>
+        <span class="review__source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.95c5.05-.5 9-4.76 9-9.95 0-5.52-4.48-10-10-10z"/></svg>
+          Facebook Review
+        </span>
+      </article>
+
+      <article class="review reveal">
+        <div class="review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review__text">&ldquo;After the May storms flooded our rental property, All Star handled the entire restoration &mdash; extraction, dry-out, drywall, paint. We didn&rsquo;t have to chase anyone. They communicated with our tenant directly and kept us in the loop the whole way.&rdquo;</p>
+        <div class="review__author">
+          <div class="review__avatar">MR</div>
+          <div>
+            <b>Miguel R.</b>
+            <span>Georgetown, TX</span>
+          </div>
+        </div>
+        <span class="review__source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z" fill="#34A853"/><path d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z" fill="#EA4335"/></svg>
+          Google Review
+        </span>
+      </article>
+
+      <article class="review reveal">
+        <div class="review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review__text">&ldquo;Professional from the first phone call. They explained everything they were doing, set up containment, and finished ahead of schedule. The price was exactly what they quoted &mdash; no surprises. Wish every contractor worked like this.&rdquo;</p>
+        <div class="review__author">
+          <div class="review__avatar">AK</div>
+          <div>
+            <b>Aisha K.</b>
+            <span>Pflugerville, TX</span>
+          </div>
+        </div>
+        <span class="review__source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.95c5.05-.5 9-4.76 9-9.95 0-5.52-4.48-10-10-10z"/></svg>
+          Facebook Review
+        </span>
+      </article>
+
+      <article class="review reveal">
+        <div class="review__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review__text">&ldquo;Called them on a Sunday morning about a slow leak behind a wall. They came out the same day, found the source, dried everything, and saved us from what would have been a major mold issue. Worth every penny.&rdquo;</p>
+        <div class="review__author">
+          <div class="review__avatar">RB</div>
+          <div>
+            <b>Robert B.</b>
+            <span>Kyle, TX</span>
+          </div>
+        </div>
+        <span class="review__source">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z" fill="#34A853"/><path d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z" fill="#EA4335"/></svg>
+          Google Review
+        </span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section section--alt" id="faq">
+  <div class="container">
+    <div class="section-head reveal" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow" style="justify-content: center;">FAQ</span>
+      <h2>Questions? We&rsquo;ve Got Answers</h2>
+      <p>The most common things Austin homeowners ask us before, during, and after a water damage or cleaning project.</p>
+    </div>
+
+    <div class="faq__list">
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          How fast can you get to my property in an emergency?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          Our typical response time in the greater Austin area is 30 minutes to 3 hours, depending on traffic and your exact location. We staff dispatchers 24/7/365, so when you call (512) 960-7001 a real person picks up &mdash; not a voicemail.
+        </div></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          Do you work with my insurance company?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          Yes. We coordinate directly with your insurance carrier and adjuster &mdash; documenting the damage, providing scope of work, and submitting the paperwork they need. We&rsquo;ve worked with most major carriers serving Texas and can help you understand your coverage and deductible before we start.
+        </div></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          Are you licensed and insured?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          Absolutely. All Star Tx Services is fully licensed, insured, and water-damage certified. Our founder has over a decade of specialized restoration experience, and every technician on the team is trained in the latest drying and remediation standards.
+        </div></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          What areas do you serve?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          We serve Austin and the surrounding Central Texas communities, including Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, Leander, Buda, San Marcos, New Braunfels, Killeen, Temple, Harker Heights, Belton, and Bastrop. Not sure if we cover your area? Just call &mdash; chances are good we do.
+        </div></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          How much does water damage restoration cost?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          Every job is different &mdash; cost depends on the size of the affected area, category of water (clean, gray, or black), how long it&rsquo;s been sitting, and what reconstruction is needed. That&rsquo;s exactly why we offer free, no-obligation estimates. We&rsquo;ll assess the damage, give you a clear written quote, and explain what your insurance is likely to cover before any work begins.
+        </div></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          Can you handle the full reconstruction, or just the dry-out?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          Both. We&rsquo;re a full-service contractor &mdash; from water extraction and structural drying to drywall, flooring, paint, and full remodels. That means one accountable team from start to finish instead of juggling multiple contractors who all blame each other when something goes wrong.
+        </div></div>
+      </div>
+
+      <div class="faq__item reveal">
+        <button class="faq__q" aria-expanded="false">
+          Do you offer free estimates for non-emergency services?
+          <span class="chev" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </span>
+        </button>
+        <div class="faq__a"><div class="faq__a-inner">
+          Yes &mdash; estimates are always free, whether you need emergency water extraction, routine carpet cleaning, air duct service, or a full remodel. Fill out the form on this page or call us and we&rsquo;ll schedule a time that works for you.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="section cta" id="areas">
+  <div class="container cta__inner">
+    <span class="eyebrow" style="color: #8FC0FF; justify-content: center;">Don&rsquo;t Wait &mdash; Water Spreads Fast</span>
+    <h2>Secure Your Free Estimate Today</h2>
+    <p>
+      Water damage won&rsquo;t wait, and neither should you. Our Austin-based team
+      is standing by 24/7 to respond fast, dry it out, and put your property
+      back together. Call now or send a request &mdash; we&rsquo;ll take it from here.
+    </p>
+    <div class="cta__buttons">
+      <a href="tel:+15129607001" class="cta__phone">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (512) 960-7001
+      </a>
+      <a href="#contact" class="btn btn--ghost btn--lg">Send a Request</a>
+    </div>
+    <p style="margin-top: 24px; font-size: .9rem; color: #98A9C6;">
+      Serving Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, Kyle, Leander, Buda, San Marcos, New Braunfels, Killeen, Temple, Harker Heights, Belton &amp; Bastrop.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="brand">
+          <span class="brand__mark">A&#9733;</span>
+          <span class="brand__name">
+            <b>All Star Tx Services</b>
+            <span>Water Damage &amp; Restoration</span>
+          </span>
+        </div>
+        <p>Austin&rsquo;s family-owned water damage restoration and cleaning experts. Licensed, insured, and on call 24/7 to put your property &mdash; and your peace of mind &mdash; back together.</p>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/AllStarTxServices/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.95c5.05-.5 9-4.76 9-9.95 0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+          <a href="mailto:allstartxservices@gmail.com" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="tel:+15129607001" aria-label="Phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#contact">Water Damage Clean Up</a></li>
+          <li><a href="#contact">Professional Cleaning</a></li>
+          <li><a href="#contact">Carpet Cleaning</a></li>
+          <li><a href="#contact">Tile &amp; Grout Cleaning</a></li>
+          <li><a href="#contact">Upholstery Cleaning</a></li>
+          <li><a href="#contact">Air Duct Cleaning</a></li>
+          <li><a href="#contact">Dryer Vent Cleaning</a></li>
+          <li><a href="#contact">Remodeling &amp; Reconstruction</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#areas">Areas We Serve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Get In Touch</h4>
+        <ul class="footer__contact">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+15129607001">(512) 960-7001</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:allstartxservices@gmail.com">allstartxservices@gmail.com</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Austin, TX &amp; Surrounding Areas
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Open 24/7 &middot; 365 Days a Year
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy;2026 All Star Tx Services. All Rights Reserved. Licensed &amp; Insured.</span>
+      <span>Water Damage Certified &middot; Family Owned &middot; Austin, TX</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating mobile call button -->
+<a href="tel:+15129607001" class="float-call" aria-label="Call now">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<!-- ============================================================
+     Load Google font + inline JS
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<script>
+(function () {
+  'use strict';
+
+  // ---------- Mobile nav toggle ----------
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // Close menu when a link is clicked
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        links.classList.remove('is-open');
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // ---------- FAQ accordion ----------
+  var faqItems = document.querySelectorAll('.faq__item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq__q');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('is-open');
+      // Close all
+      faqItems.forEach(function (other) {
+        other.classList.remove('is-open');
+        var b = other.querySelector('.faq__q');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ---------- Reveal on scroll ----------
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && reveals.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  // ---------- Lead form handling ----------
+  var form = document.getElementById('leadForm');
+  var success = document.getElementById('formSuccess');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Basic HTML5 validation
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      // Collect data
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = v; });
+      // In a real deploy this would POST to a backend / form service.
+      // Persist to localStorage so it isn't lost on refresh.
+      try {
+        var leads = JSON.parse(localStorage.getItem('allstar_leads') || '[]');
+        leads.push({ data: data, ts: new Date().toISOString() });
+        localStorage.setItem('allstar_leads', JSON.stringify(leads));
+      } catch (err) { /* ignore */ }
+      // Show success message
+      if (success) {
+        success.classList.add('is-visible');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      form.reset();
+      // Auto-hide after 8s
+      setTimeout(function () {
+        if (success) success.classList.remove('is-visible');
+      }, 8000);
+    });
+  }
+
+  // ---------- Smooth-scroll offset for sticky header ----------
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var id = a.getAttribute('href');
+      if (!id || id === '#') return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var headerH = document.querySelector('.header').offsetHeight || 76;
+      var y = target.getBoundingClientRect().top + window.pageYOffset - headerH - 12;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

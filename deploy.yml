@@ -1,0 +1,77 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Run on every push to main / master
+  push:
+    branches: [main, master]
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+# Set the permissions required by the official GitHub Pages deployment action
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, cancel any in-progress ones
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate index.html exists
+        run: |
+          if [ ! -f "index.html" ]; then
+            echo "::error::index.html was not found at repository root"
+            exit 1
+          fi
+          echo "Found index.html ($(wc -c < index.html) bytes)"
+
+      - name: Lint HTML (optional, non-blocking)
+        continue-on-error: true
+        run: |
+          # Quick sanity check using Python's html.parser
+          python3 - <<'PY'
+          import html.parser, sys
+          class V(html.parser.HTMLParser):
+              def __init__(self): super().__init__(); self.stack=[]; self.errors=0
+              def handle_starttag(self,t,a):
+                  if t not in ('meta','link','img','br','hr','input','source','area','base','col','embed','param','track','wbr'):
+                      self.stack.append(t)
+              def handle_endtag(self,t):
+                  if self.stack and self.stack[-1]==t: self.stack.pop()
+          v=V()
+          with open('index.html',encoding='utf-8') as f: v.feed(f.read())
+          if v.stack:
+              print(f"⚠️ Unclosed tags: {v.stack}")
+              sys.exit(0)  # non-blocking
+          print("✅ HTML structure looks balanced")
+          PY
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repo root as the static site
+          path: .
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
